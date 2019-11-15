@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fragment_main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <!--<android.support.constraint.Guideline-->
+    <!--android:id="@+id/guideline"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintGuide_percent="0.18" />-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <TextView
+        android:id="@+id/textdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="状态: "
+        android:textColor="@color/color_login_bg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/guideline10"
+        app:layout_constraintStart_toEndOf="@+id/guideline4" />
+
+    <TextView
+        android:id="@+id/text_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未连接"
+        android:textColor="@color/color_login_bg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textdesc"
+        app:layout_constraintStart_toEndOf="@+id/textdesc"
+        app:layout_constraintTop_toTopOf="@+id/textdesc" />
+
+    <TextView
+        android:id="@+id/text_bluedesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙: "
+        android:textColor="@color/color_login_bg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textdesc"
+        app:layout_constraintEnd_toStartOf="@+id/text_blueconnect"
+        app:layout_constraintTop_toTopOf="@+id/textdesc" />
+
+    <TextView
+        android:id="@+id/text_blueconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未连接"
+        android:textColor="@color/color_login_bg"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textdesc"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/textdesc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/color_login_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/app_title" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/main_closelogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2" />
+
+    <ImageView
+        android:id="@+id/main_uplogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:srcCompat="@mipmap/diandian_unlockx" />
+
+    <!--寻车-->
+    <ImageView
+        android:id="@+id/img_findcar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        app:srcCompat="@mipmap/diandian_find_car_focus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="寻车"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_findcar"
+        app:layout_constraintStart_toStartOf="@+id/img_findcar"
+        app:layout_constraintTop_toBottomOf="@+id/img_findcar" />
+
+    <!--解锁-->
+    <ImageView
+        android:id="@+id/img_openlock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/img_findcar"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/img_findcar"
+        app:srcCompat="@mipmap/diandian_open_lock_focus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="解锁"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_openlock"
+        app:layout_constraintStart_toStartOf="@+id/img_openlock"
+        app:layout_constraintTop_toBottomOf="@+id/img_openlock" />
+
+    <!--启动-->
+
+    <ImageView
+        android:id="@+id/img_startup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/img_findcar"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:srcCompat="@mipmap/diandian_startup_focus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="启动"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_startup"
+        app:layout_constraintStart_toStartOf="@+id/img_startup"
+        app:layout_constraintTop_toBottomOf="@+id/img_startup" />
+
+    <!--加锁-->
+    <ImageView
+        android:id="@+id/img_colseup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/img_openlock"
+        app:layout_constraintTop_toBottomOf="@+id/guideline6"
+        app:srcCompat="@mipmap/diandian_close_lock_focus" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="加锁"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_colseup"
+        app:layout_constraintStart_toStartOf="@+id/img_colseup"
+        app:layout_constraintTop_toBottomOf="@+id/img_colseup" />
+
+    <!--感应-->
+    <ImageView
+        android:id="@+id/img_induction"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/main_closelogo"
+        app:layout_constraintStart_toStartOf="@+id/main_closelogo"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:srcCompat="@mipmap/diandian_induction_focus" />
+
+    <ImageView
+        android:id="@+id/img_induction_focus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/main_closelogo"
+        app:layout_constraintStart_toStartOf="@+id/main_closelogo"
+        app:layout_constraintTop_toBottomOf="@+id/guideline7"
+        app:srcCompat="@mipmap/diandian_induction" />
+
+    <TextView
+        android:id="@+id/text_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="感应"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/img_induction_focus"
+        app:layout_constraintStart_toStartOf="@+id/img_induction_focus"
+        app:layout_constraintTop_toBottomOf="@+id/img_induction_focus" />
+
+    <TextView
+        android:id="@+id/text_vi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:text="感应"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/img_induction"
+        app:layout_constraintStart_toStartOf="@+id/img_induction"
+        app:layout_constraintTop_toBottomOf="@+id/img_induction" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <!--logo-->
+    <com.othershe.library.NiceImageView
+        android:id="@+id/diandianlogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toEndOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline8"
+        app:srcCompat="@mipmap/diandian_danche_logo" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+
+    <!--电池电量-->
+    <TextView
+        android:id="@+id/text_battery_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="电池电量:"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/diandianlogo" />
+    <!--电池电量百分比-->
+    <TextView
+        android:id="@+id/text_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="0%"
+        android:textColor="@color/color_login_bg"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_battery_power"
+        app:layout_constraintStart_toEndOf="@+id/text_battery_power"
+        app:layout_constraintTop_toTopOf="@+id/text_battery_power" />
+
+
+    <!--续航-->
+    <!--电池电量百分比-->
+    <TextView
+        android:id="@+id/text_kilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0km"
+        android:textColor="@color/color_login_bg"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_percentage"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/text_percentage" />
+
+    <TextView
+        android:id="@+id/text_kilometerstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="续航里程:"
+        android:textColor="@color/color_main_gary"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_percentage"
+        app:layout_constraintEnd_toStartOf="@+id/text_kilometers"
+        app:layout_constraintTop_toTopOf="@+id/text_percentage" />
+
+</android.support.constraint.ConstraintLayout>

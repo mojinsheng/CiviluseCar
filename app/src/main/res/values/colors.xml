@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59A3FF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_title">#59A3FF</color>
+    <color name="welcome">#FFFFFF</color>
+    <color name="color_login_bg">#59A3FF</color>
+    <color name="color_main_gary">#9B9B9B</color>
+    <color name="color_person_text">#6D85AD</color>
+    <color name="color_line">#888888</color>
+
+
+    <color name="color_main_bg">#FEFEFE</color>
+    <color name="color_fragment_main_bg">#FDFDFD</color>
+    <!--字体颜色-->
+    <color name="color_text">#5B5B5B</color>
+    <!--某些子標題的背景颜色-->
+    <color name="color_sub_background">#F5F5F5</color>
+    <!--主題藍色-->
+    <color name="color_main">#3CADFF</color>
+    <!--主页搜索背景色-->
+    <color name="color_main_search_bg">#333333</color>
+    <!--分隔线颜色-->
+    <color name="color_sub_line">#A3A3A3</color>
+    <!--个人中心字体颜色-->
+    <color name="color_uc_text">#333333</color>
+    <!--代办保险大字体-->
+    <color name="color_insurance_text">#5B5B5B</color>
+    <!--商城物品价格-->
+    <color name="color_text_shop_price">#FF3C3C</color>
+    <!--购物车结算背景色-->
+    <color name="color_text_shopping_car_confirm">#FF894D</color>
+    <!--购物车结算背景色-->
+    <color name="color_text_shopping_car_bg">#5B5B5B</color>
+    <!--已收货-->
+    <color name="color_text_done">#5FFF54</color>
+    <!--未支付-->
+    <color name="color_text_wait_pay">#FF3C3C</color>
+    <!--待发货-->
+    <color name="color_text_wait_send">#3CADFF</color>
+    <!--待收货-->
+    <color name="color_text_wait_get">#FF8A4E</color>
+    <!--评价-->
+    <color name="color_rating">#FFBD4E</color>
+    <!--搜索背景-->
+    <color name="color_search_bg">#DEDEDE</color>
+    <!--登录页横线-->
+    <color name="color_login_line">#0093DD</color>
+
+    <!--已通过-->
+    <color name="color_survey_success">#5FFF54</color>
+    <!--等待支付、开始导航、等待取车、等待年检、正在年检、复检中-->
+    <color name="color_survey_checking">#FF8A4E</color>
+    <!--等待接单-->
+    <color name="color_survey_wait_order">#63BDFF</color>
+    <!--未通过-->
+    <color name="color_survey_fail">#FF3C3C</color>
+
+    <!--启动页字体颜色-->
+    <color name="color_splash">#0093DD</color>
+
+    <!--启动页字体颜色-->
+    <color name="color_register_hello">#191919</color>
+    <color name="activity_bg_color">#eeeeee</color>
+
+
+    <!--首页模块按钮背景-->
+    <color name="home_module_btn_bg_normal">#ffffff</color>
+    <color name="home_module_btn_bg_pressed">#E7F0F6</color>
+
+    <color name="pulldown_text_color_normal">#606060</color>
+    <color name="pulldown_text_color_selected">#4bb1ff</color>
+
+    <!-- 下拉选择按钮颜色 -->
+    <color name="select_btn_right_bg_normal">#4BB0FE</color>
+    <color name="select_btn_left_bg_normal">#e0e0e0</color>
+    <color name="select_btn_right_bg_pressed">#0394FE</color>
+    <color name="select_btn_left_bg_pressed">#CECECE</color>
+</resources>

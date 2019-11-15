@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app主色调-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorPrimaryDarkV2">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="toast_stroke_gray">#99d4d4d4</color>
+    <color name="black">#FF000000</color>
+    <color name="gray_thin">#EEEEEE</color>
+    <color name="yellow">#FFCC33</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_title">#59A3FF</color>
+    <color name="welcome">#FFFFFF</color>
+</resources>

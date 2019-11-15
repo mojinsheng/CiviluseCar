@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.github.yuzhiqiang1993'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    compileOnly "com.android.support:appcompat-v7:$android_support"
+//    compileOnly "com.android.support:design:$android_support"
+//    compileOnly "com.android.support:support-v4:$android_support"
+//    compileOnly "com.android.support:support-vector-drawable:$android_support"
+    implementation 'com.google.zxing:core:3.3.0'
+
+
+}

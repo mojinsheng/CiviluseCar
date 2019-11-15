@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_sub_background">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/uc_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.18" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_login_bg"
+        app:layout_constraintBottom_toTopOf="@id/uc_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+
+           <com.othershe.library.NiceImageView
+               android:id="@+id/person_logo"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_centerInParent="true"
+               android:src="@mipmap/bg_personal_img"
+               app:is_circle="true" />
+           <TextView
+               android:id="@+id/text_phone"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:layout_marginBottom="15dp"
+               android:textStyle="bold"
+               android:layout_alignParentBottom="true"
+               android:textColor="@color/color_white"
+               android:text="手机号"
+               android:textSize="14sp" />
+
+       </RelativeLayout>
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_setting"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        app:srcCompat="@mipmap/person_setting"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+    <RelativeLayout
+        android:id="@+id/uc_rl_check_record"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_setting"
+        app:layout_constraintStart_toEndOf="@id/img_setting"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/img_setting">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="设置中心"
+            android:textSize="16sp"
+            android:textColor="@color/color_person_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrow2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/person_up" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/uc_line1"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:background="@color/color_line"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/img_setting" />
+
+
+    <ImageView
+        android:id="@+id/img_aboutus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        app:srcCompat="@mipmap/person_aboutus"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/uc_line1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_aboutus"
+        app:layout_constraintStart_toEndOf="@id/img_aboutus"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/img_aboutus">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="关于我们"
+            android:textSize="16sp"
+            android:textColor="@color/color_person_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrow3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/person_up" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/uc_line2"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:background="@color/color_line"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/img_aboutus" />
+
+    <!--当前版本-->
+    <ImageView
+        android:id="@+id/img_version"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        app:srcCompat="@mipmap/person_verson"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/uc_line2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_version"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/img_version"
+        app:layout_constraintStart_toEndOf="@id/img_version"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@id/img_version">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="当前版本"
+            android:textSize="16sp"
+            android:textColor="@color/color_person_text" />
+
+        <ImageView
+            android:id="@+id/iv_arrow4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/person_up" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/uc_line3"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:background="@color/color_line"
+        app:layout_constraintEnd_toEndOf="@id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/img_version" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_logout_fill"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="退出登录"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/guideline5"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

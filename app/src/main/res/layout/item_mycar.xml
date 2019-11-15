@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/color_white">
+    <android.support.constraint.Guideline
+        android:id="@+id/uc_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+    <android.support.constraint.Guideline
+        android:id="@+id/uc_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+    <android.support.constraint.Guideline
+        android:id="@+id/uc_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+    <RadioButton
+        android:id="@+id/rb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/color_login_bg"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toStartOf="@+id/uc_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/uc_guideline"
+        />
+    <TextView
+        android:id="@+id/text_carname"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="123422222222"
+        android:textColor="@color/color_login_bg"
+        android:textSize="14sp"
+        app:layout_constraintTop_toTopOf="@+id/rb_check"
+        app:layout_constraintStart_toEndOf="@+id/rb_check"
+        app:layout_constraintBottom_toBottomOf="@+id/rb_check"/>
+
+    <Button
+        android:id="@+id/car_constrol"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_logout_fill"
+        android:gravity="center"
+        android:text="车主管理"
+        app:layout_constraintEnd_toStartOf="@+id/uc_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/uc_guideline"
+        />
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:layout_height="30dp"
+        android:background="@drawable/shape_logout_fill"
+        android:gravity="center"
+        android:text="设置"
+        app:layout_constraintEnd_toStartOf="@+id/car_constrol"
+        app:layout_constraintTop_toBottomOf="@+id/uc_guideline"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/color_sub_line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/car_constrol"
+        app:layout_constraintStart_toStartOf="@id/text_carname"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏 -->
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="title_padding">0dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="title_order_text_size">16sp</dimen>
+    <dimen name="title_order_text_padding">12dp</dimen>
+    <dimen name="title_back_btn_padding_left">12dp</dimen>
+    <dimen name="title_back_btn_width">48dp</dimen>
+    <dimen name="title_back_btn_height">24dp</dimen>
+
+    <!-- 下拉选择按钮圆角大小 -->
+    <dimen name="select_btn_cornor_radius">6dp</dimen>
+    <!-- 下拉选择按钮右边蓝色部分宽度 -->
+    <dimen name="select_btn_right_widht">28dp</dimen>
+    <dimen name="select_btn_right_padding">32dp</dimen>
+    <!--通用按钮圆角-->
+    <dimen name="common_btn_corner_radius">2dp</dimen>
+
+    <!-- 租车主界面TAB -->
+    <dimen name="rent_car_tab_height">48dp</dimen>
+    <dimen name="rent_car_tab_text_size">18sp</dimen>
+    <dimen name="rent_car_tab_line_top_margin">10dp</dimen>
+    <dimen name="rent_car_tab_line_bottom_margin">10dp</dimen>
+    <dimen name="rent_car_tab_line_width">2dp</dimen>
+    <dimen name="rent_car_tab_rb_padding">12dp</dimen>
+
+    <!-- 租车主界面汽车类型按钮 -->
+    <dimen name="rent_car_btn_scv_top_padding">2dp</dimen>
+    <dimen name="rent_car_btn_scv_bottom_padding">2dp</dimen>
+    <dimen name="rent_car_btn_width">96sp</dimen>
+    <dimen name="rent_car_btn_height">106sp</dimen>
+
+    <!-- 汽车列表提交订单按钮圆角大小 -->
+
+    <dimen name="rent_car_listitem_padding">12dp</dimen>
+    <dimen name="rent_car_listitem_text_padding_left">12dp</dimen>
+    <dimen name="rent_car_listitem_text_padding_right">12dp</dimen>
+    <dimen name="rent_car_listitem_name_text_size">16sp</dimen>
+    <dimen name="rent_car_listitem_spec_text_size">14sp</dimen>
+    <dimen name="rent_car_listitem_price_text_size">14sp</dimen>
+    <dimen name="rent_car_listitem_submit_text_size">16sp</dimen>
+    <dimen name="rent_car_listitem_submit_top_margin">12dp</dimen>
+    <dimen name="rent_car_listitem_submit_padding">6dp</dimen>
+</resources>

@@ -1,0 +1,96 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+
+    defaultConfig {
+        applicationId "com.from.civilusecar"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+        }
+
+        multiDexEnabled true
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+
+    signingConfigs {
+        /**
+         * 设置你的keystore相关
+         * demo中只是一个示例，使用时请根据实际情况进行配置
+         */
+        debug {
+            //keystore中key的别名
+            keyAlias 'zhinengwojia'
+            //keystore中key的密码
+            keyPassword '123456'
+            //keystore的文件路径，可以是绝对路径也可以是相对路径
+            storeFile file('zhinengwojia.jks')
+            //keystore的密码
+            storePassword '123456'
+        }
+        release {
+            //keystore中key的别名
+            keyAlias 'zhinengwojia'
+            //keystore中key的密码
+            keyPassword '123456'
+            //keystore的文件路径，可以是绝对路径也可以是相对路径
+            storeFile file('zhinengwojia.jks')
+            //keystore的密码
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    api 'me.militch:banner-holder:1.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation files('libs/AMap_Search_V6.1.0_20180330.jar')
+    implementation files('libs/AMap2DMap_5.2.0_AMapLocation_4.2.0_20180809.jar')
+    implementation files('libs/Android_Map3D_SDK_V6.4.0_20180814.jar')
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    implementation project(path: ':xslonglib')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    implementation 'pub.devrel:easypermissions:1.3.0'
+    implementation project(path: ':zxinglibrary')
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.yanzhenjie:permission:2.0.0-rc4'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+}
